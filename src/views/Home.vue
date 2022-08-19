@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <Luisa :design="figmaJSON" v-model="viewModel" :config="config"/>
+    <Luisa :design="figmaConfig" v-model="viewModel"/>
   </div>
 </template>
 
@@ -19,8 +19,8 @@ export default {
     return {
       figmaJSON: app,
       figmaConfig: {
-        figmaFile: "",
-        figmaAccessKey: "",
+        figmaFile: "hV90BaZUwk4idT4ZY9FYLs",
+        figmaAccessKey: "figd_8JkVWVqNHnkyEFqMv-NdxXH1KGVEKE8VlnR60hWX",
       },
       viewModel: {
         /**
@@ -29,7 +29,7 @@ export default {
       },
       config: {
         responsive: [
-          { value: "Desktop", label: "Desktop", types: ["desktop"] },
+          { value: "Web", label: "Desktop", types: ["desktop"] },
           { value: "Mobile", label: "Mobile", types: ["tablet", "mobile"] },
         ],
         components: {
